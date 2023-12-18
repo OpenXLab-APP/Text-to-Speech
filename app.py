@@ -40,7 +40,7 @@ def tts_inference(
     target_speaker = SUPPORTED_SPEAKERS[target_speaker]
     
     args_list = ["--config", "./egs/tts/vits_hifitts/exp_config.json"]
-    args_list += ["--checkpoint_path", "./ckpt/latest-checkpoint"]
+    args_list += ["--checkpoint_path", "./latest-checkpoint"]
     args_list += ["--speaker_name", target_speaker]
     args_list += ["--text", input_text]
     args_list += ["--mode","single"]
