@@ -18,6 +18,10 @@ import gradio as gr
 import os
 import inference
 
+from openxlab.model import download
+download(model_repo='Amphion/Text-to-Speech', model_name=['model', 'model_1', 'optimizer', 'optimizer_1'], output='latest-checkpoint')
+
+
 SUPPORTED_SPEAKERS = {
     "Cori Samuel":"hifitts_92",
     "Phil Benson":"hifitts_6097",
