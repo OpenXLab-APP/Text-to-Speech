@@ -1,0 +1,12 @@
+[
+    [
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0000_step-0010076_loss-42.366682",
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0015_step-0161216_loss-38.389271",
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0020_step-0211596_loss-38.454503",
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0025_step-0261976_loss-38.479332"
+    ],
+    [
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0000_step-0010076_loss-42.366682",
+        "/mnt/workspace/tzeying/data/vits_on_libritts_hifitts/logs/HifiTTS_all/checkpoint/epoch-0020_step-0211596_loss-38.454503"
+    ]
+]
