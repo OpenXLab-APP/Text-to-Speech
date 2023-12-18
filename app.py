@@ -1,7 +1,7 @@
 # Copyright (c) 2023 Amphion.
 #
 # This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
+# LICENSE file in the root directory of this source tree
 
 import subprocess
 
@@ -19,16 +19,16 @@ import os
 import inference
 
 SUPPORTED_SPEAKERS = {
-    "92":"hifitts_92",
-    "6097":"hifitts_6097",
-    "6670":"hifitts_6670",
-    "6671":"hifitts_6671",
-    "8051":"hifitts_8051",
-    "9017":"hifitts_9017",
-    "9136":"hifitts_9136",
-    "11614":"hifitts_11614", 
-    "11697":"hifitts_11697",
-    "12787":"hifitts_12787" 
+    "Cori Samuel":"hifitts_92",
+    "Phil Benson":"hifitts_6097",
+    "John Van Stan":"hifitts_6670",
+    "Mike Pelton":"hifitts_6671",
+    "Tony Oliva":"hifitts_8051",
+    "Maria Kasper":"hifitts_9017",
+    "Helen Taylor":"hifitts_9136",
+    "Sylviamb":"hifitts_11614", 
+    "Celine Major":"hifitts_11697",
+    "LikeManyWaters":"hifitts_12787" 
 }
 
 
@@ -36,9 +36,11 @@ def tts_inference(
     input_text,
     target_speaker
 ):
-
+    ### Target Speaker ###
+    target_speaker = SUPPORTED_SPEAKERS[target_speaker]
+    
     args_list = ["--config", "./egs/tts/vits_hifitts/exp_config.json"]
-    args_list += ["--checkpoint_path", "./latest-checkpoint"]
+    args_list += ["--checkpoint_path", "./ckpt/latest-checkpoint"]
     args_list += ["--speaker_name", target_speaker]
     args_list += ["--text", input_text]
     args_list += ["--mode","single"]
@@ -50,7 +52,7 @@ def tts_inference(
 
     ### Display ###
     result_file = os.path.join(
-        "result/{}.wav".format(target_speaker)
+        "result/single/test_pred.wav"
     )
     return result_file
 
