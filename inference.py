@@ -141,7 +141,7 @@ def build_parser():
 
 def main(args_list):
     # Parse arguments and config
-    args = parser.parse_args(args_list)
+    args = build_parser().parse_args(args_list)
     cfg = load_config(args.config)
 
     # CUDA settings
@@ -151,7 +151,9 @@ def main(args_list):
     inferencer = build_inference(args, cfg)
 
     # Run inference
-    inferencer.inference()
+    output_audio = inferencer.inference()
+
+    return output_audio
 
 
 if __name__ == "__main__":
