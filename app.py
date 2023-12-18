@@ -5,7 +5,7 @@
 
 import subprocess
 
-command_to_run = "cd ./modules/monotonic_align;mkdir -p monotonic_align;python setup.py build_ext --inplace;cd /home/user/app"
+command_to_run = "cd ./modules/monotonic_align;mkdir -p monotonic_align;python setup.py build_ext --inplace;cd /home/xlab-app-center"
 
 try:
     result = subprocess.check_output(command_to_run, shell=True, text=True)
