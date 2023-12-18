@@ -61,7 +61,7 @@ demo_inputs = [
     gr.Textbox(
         label="Input text",
         type="text",
-        value="Hello, audio explorer! Welcome on a journey through diverse soundscapes with Amphion."
+        placeholder="Type something here.."
     ),
     gr.Radio(
         choices=list(SUPPORTED_SPEAKERS.keys()),
