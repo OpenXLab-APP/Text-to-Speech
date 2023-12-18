@@ -78,7 +78,7 @@ demo = gr.Interface(
     fn=tts_inference,
     inputs=demo_inputs,
     outputs=demo_output,
-    title="Amphion HifiTTS Text-to-Speech",
+    title="Amphion Text-to-Speech",
 )
 
 if __name__ == "__main__":
