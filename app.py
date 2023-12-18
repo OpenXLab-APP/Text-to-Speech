@@ -61,13 +61,12 @@ demo_inputs = [
     gr.Textbox(
         label="Input text",
         type="text",
-        lines=1,
-        max_lines=20
+        value="Hello, audio explorer! Welcome on a journey through diverse soundscapes with Amphion."
     ),
     gr.Radio(
         choices=list(SUPPORTED_SPEAKERS.keys()),
         label="Target Speaker",
-        value="92"
+        value="Cori Samuel"
     )
 ]
 
