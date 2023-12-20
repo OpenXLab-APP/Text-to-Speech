@@ -1,12 +1,2 @@
----
-title: Text To Speech
-emoji: 🔥
-colorFrom: gray
-colorTo: blue
-sdk: gradio
-sdk_version: 4.10.0
-app_file: app.py
-pinned: false
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+# Text To Speech
+[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/Amphion/Text-to-Speech)
