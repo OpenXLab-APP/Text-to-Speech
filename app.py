@@ -19,7 +19,7 @@ import os
 import inference
 
 from openxlab.model import download
-download(model_repo='Amphion/Text-to-Speech', model_name=['model', 'model_1', 'optimizer', 'optimizer_1'], output='latest-checkpoint')
+download(model_repo='Amphion/Text-to-Speech', model_name=['model', 'model_1', 'optimizer', 'optimizer_1'], output='latest-checkpoint',overwrite=True)
 
 
 SUPPORTED_SPEAKERS = {
